@@ -4,9 +4,10 @@ import Song from "./Song";
 class Top10List extends React.Component {
   render (){
     if(!this.props.top10) {return null};
-    const songNodes = this.props.top10.map(song) => {
+
+    const songNodes = this.props.top10.map(song => {
       return (
-        <song artist={song.artistName} key={song.artistId}/>
+        <Song artist={song.artistName} key={song.artistId} title={song.name}/>
       )
     })
     return(

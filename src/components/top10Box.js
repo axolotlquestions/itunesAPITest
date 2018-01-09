@@ -6,7 +6,7 @@ class Top10Box extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      top10: {},
+      top10: [],
     };
   }
 
